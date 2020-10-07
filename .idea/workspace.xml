@@ -23,21 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed54e32b-6e50-456f-a1b4-c512db9fe8b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/users-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/users-update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -68,15 +66,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/admin" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/vendor/hcodebr/php-classes/src" />
-      <recent name="$PROJECT_DIR$/views/admin" />
       <recent name="$PROJECT_DIR$/res/admin" />
       <recent name="$PROJECT_DIR$/res/site" />
     </key>
@@ -89,7 +87,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601387342285</updated>
-      <workItem from="1601387343694" duration="6551000" />
+      <workItem from="1601387343694" duration="7335000" />
+      <workItem from="1602075749907" duration="849000" />
     </task>
     <servers />
   </component>
@@ -106,15 +105,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="504" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1601390596004">
       <screen x="52" y="27" width="1314" height="741" />
     </state>
     <state x="504" y="323" width="399" height="156" key="NewPhpFileDialog/52.27.1314.741@52.27.1314.741" timestamp="1601390596004" />
-    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1601394157885">
+    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602075940106">
       <screen x="52" y="27" width="1314" height="741" />
     </state>
-    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup/52.27.1314.741@52.27.1314.741" timestamp="1601394157885" />
+    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup/52.27.1314.741@52.27.1314.741" timestamp="1602075940106" />
   </component>
 </project>
