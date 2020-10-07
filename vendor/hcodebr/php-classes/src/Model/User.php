@@ -13,37 +13,70 @@ class User extends Model {
 		"iduser", "idperson", "deslogin", "despassword", "inadmin", "dtergister"
 	];
 
-	public static function login($login, $password):User
-	{
+    public static function checkLogin($inadmin = true)
+    {
 
-		$db = new Sql();
+        if (
+            !isset($_SESSION[User::SESSION])
+            ||
+            !$_SESSION[User::SESSION]
+            ||
+            !(int)$_SESSION[User::SESSION]["iduser"] > 0
+        ) {
+            //Não está logado
+            return false;
 
-		$results = $db->select("SELECT * FROM tb_users WHERE deslogin = :LOGIN", array(
-			":LOGIN"=>$login
-		));
+        } else {
 
-		if (count($results) === 0) {
-			throw new \Exception("Não foi possível fazer login.");
-		}
+            if ($inadmin === true && (bool)$_SESSION[User::SESSION]['inadmin'] === true) {
 
-		$data = $results[0];
+                return true;
 
-		if (password_verify($password, $data["despassword"])) {
+            } else if ($inadmin === false) {
 
-			$user = new User();
-			$user->setData($data);
+                return true;
 
-			$_SESSION[User::SESSION] = $user->getValues();
+            } else {
 
-			return $user;
+                return false;
 
-		} else {
+            }
 
-			throw new \Exception("Não foi possível fazer login.");
+        }
 
-		}
+    }
 
-	}
+    public static function login($login, $password):User
+    {
+
+        $db = new Sql();
+
+        $results = $db->select("SELECT * FROM tb_users WHERE deslogin = :LOGIN", array(
+            ":LOGIN"=>$login
+        ));
+
+        if (count($results) === 0) {
+            throw new \Exception("Não foi possível fazer login.");
+        }
+
+        $data = $results[0];
+
+        if (password_verify($password, $data["despassword"])) {
+
+            $user = new User();
+            $user->setData($data);
+
+            $_SESSION[User::SESSION] = $user->getValues();
+
+            return $user;
+
+        } else {
+
+            throw new \Exception("Não foi possível fazer login.");
+
+        }
+
+    }
 
 	public static function logout()
 	{
@@ -52,25 +85,30 @@ class User extends Model {
 
 	}
 
-	public static function verifyLogin($inadmin = true)
-	{
+    public static function verifyLogin($inadmin = true)
+    {
 
-		if (
-			!isset($_SESSION[User::SESSION])
-			|| 
-			!$_SESSION[User::SESSION]
-			||
-			!(int)$_SESSION[User::SESSION]["iduser"] > 0
-			||
-			(bool)$_SESSION[User::SESSION]["iduser"] !== $inadmin
-		) {
-			
-			header("Location: /admin/login");
-			exit;
+        if (!User::checkLogin($inadmin)) {
 
-		}
+            if ($inadmin) {
+                header("Location: /ecommerce/admin/login");
+            } else {
+                header("Location: /ecommerce/login");
+            }
+            exit;
 
-	}
+        }
+
+    }
+
+    public static function listAll()
+    {
+        $sql = new Sql();
+
+        return $sql->select("SELECT * FROM tb_users a INNER JOIN tb_persons b USING(idperson) ORDER BY b.desperson");
+
+    }
+
 
 }
 

@@ -3,7 +3,8 @@ session_start();
 require_once("vendor/autoload.php");
 require_once("functions.php");
 
-use Hcode\Model\User;
+use \Hcode\PageAdmin;
+use \Hcode\Model\User;
 
 $app = new \Slim\Slim();
 
@@ -19,8 +20,6 @@ $app->get('/', function() {
 
 $app->get('/admin', function() {
 
-    var_dump("teste");
-
     User::verifyLogin();
 
     $page = new Hcode\PageAdmin();
@@ -31,7 +30,7 @@ $app->get('/admin', function() {
 
 $app->get('/admin/login', function() {
 
-    $page = new Hcode\PageAdmin([
+    $page = new PageAdmin([
         "header"=>false,
         "footer"=>false
     ]);
@@ -42,9 +41,9 @@ $app->get('/admin/login', function() {
 
 $app->post('/admin/login', function() {
 
-    User::login(post('deslogin'), post('despassword'));
+    User::login($_POST["deslogin"], $_POST["despassword"]);
 
-    header("Location: /admin");
+    header("Location: /ecommerce/admin");
     exit;
 
 });
@@ -62,8 +61,12 @@ $app->get('/admin/users', function(){
 
     User::verifyLogin();
 
+    $users = User::listAll();
+
     $page = new \Hcode\PageAdmin();
-    $page->setTpl('users');
+    $page->setTpl('users', array(
+        "users"=>$users
+    ));
 });
 
 $app->get('/admin/users/create', function(){
@@ -74,11 +77,19 @@ $app->get('/admin/users/create', function(){
     $page->setTpl('users-create');
 });
 
+$app->get('/admin/users/:iduser/delete', function(){
+
+    User::verifyLogin();
+
+    $page = new PageAdmin();
+    $page->setTpl('');
+});
+
 $app->get('/admin/users/:iduser', function($iduser){
 
     User::verifyLogin();
 
-    $page = new \Hcode\PageAdmin();
+    $page = new PageAdmin();
     $page->setTpl('users-update');
 });
 
@@ -86,7 +97,7 @@ $app->post('/admin/users/create', function(){
 
     User::verifyLogin();
 
-    $page = new \Hcode\PageAdmin();
+    $page = new PageAdmin();
     $page->setTpl('');
 });
 
@@ -94,17 +105,11 @@ $app->post('/admin/users/:iduser', function($iduser){
 
     User::verifyLogin();
 
-    $page = new \Hcode\PageAdmin();
+    $page = new PageAdmin();
     $page->setTpl('');
 });
 
-$app->delete('/admin/users/:iduser', function(){
 
-    User::verifyLogin();
-
-    $page = new \Hcode\PageAdmin();
-    $page->setTpl('');
-});
 
 $app->run();
 
