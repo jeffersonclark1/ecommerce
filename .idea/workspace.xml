@@ -23,14 +23,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed54e32b-6e50-456f-a1b4-c512db9fe8b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Categories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/categories-create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/categories-update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/categories-menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/categories-create.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/categories-create.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/categories-update.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/categories-update.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/categories.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/categories.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/footer.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/footer.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/footer.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/footer.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/forgot-reset-success.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/forgot-reset-success.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/forgot-reset.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/forgot-reset.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/forgot-sent.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/forgot-sent.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/forgot.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/forgot.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/forgot.5b86f2dc013fddae6d4fc41781e592cd.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/forgot.5b86f2dc013fddae6d4fc41781e592cd.rtpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views-cache/header.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/header.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/header.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/header.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/index.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/index.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/index.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/index.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/login.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/login.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/users-create.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/users-create.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/users-update.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/users-update.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/users.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/users.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +61,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -66,17 +83,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model" />
       <recent name="$PROJECT_DIR$/views/admin" />
-      <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/vendor/hcodebr/php-classes/src" />
     </key>
