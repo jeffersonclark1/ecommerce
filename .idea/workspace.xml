@@ -23,37 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed54e32b-6e50-456f-a1b4-c512db9fe8b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Mailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views-cache/forgot-reset.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views-cache/forgot-sent.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views-cache/forgot.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views-cache/forgot.5b86f2dc013fddae6d4fc41781e592cd.rtpl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/forgot-reset-success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/forgot-reset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/forgot-sent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/forgot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/email/forgot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/categories-create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/categories-update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/categories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpd-vhosts.conf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views-cache/footer.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/footer.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views-cache/header.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/header.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views-cache/login.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/login.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views-cache/users.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/users.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/users-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/users-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,17 +68,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model" />
       <recent name="$PROJECT_DIR$/views/admin" />
+      <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/vendor/hcodebr/php-classes/src" />
-      <recent name="$PROJECT_DIR$/res/admin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -157,10 +134,10 @@
       <screen x="52" y="27" width="1314" height="741" />
     </state>
     <state x="373" y="174" key="run.anything.popup/52.27.1314.741@52.27.1314.741" timestamp="1602249007431" />
-    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602263199323">
+    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602594105649">
       <screen x="52" y="27" width="1314" height="741" />
     </state>
-    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup/52.27.1314.741@52.27.1314.741" timestamp="1602263199323" />
+    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup/52.27.1314.741@52.27.1314.741" timestamp="1602594105649" />
     <state x="522" y="115" width="946" height="964" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602087186092" />
     <state x="434" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602184671738">
       <screen x="52" y="27" width="1314" height="741" />
