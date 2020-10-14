@@ -18,6 +18,21 @@ class Product extends Model {
 
     }
 
+    public static function checkList($list)
+    {
+
+        foreach ($list as &$row){
+
+            $prod = new Product();
+            $prod->setData($row);
+            $row = $prod->getValues();
+
+        }
+
+        return $list;
+
+    }
+
     public function save()
     {
 
