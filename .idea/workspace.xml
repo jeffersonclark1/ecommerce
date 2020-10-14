@@ -23,18 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed54e32b-6e50-456f-a1b4-c512db9fe8b5" name="Default Changelist" comment="Site - Produtos">
-      <change afterPath="$PROJECT_DIR$/views/admin/categories-products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin-categories.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/site.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views-cache/categories.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/categories.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views-cache/categories-menu.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/categories-menu.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views-cache/category.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/category.a0e5761519f30e7ad831cbf381ee12dc.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views-cache/footer.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/footer.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views-cache/header.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/views-cache/header.07d2c25a5d0e2994304dce5f0035abe6.rtpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/categories-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/categories-menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/category.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +98,7 @@
       <workItem from="1602084705495" duration="657000" />
       <workItem from="1602180137073" duration="10169000" />
       <workItem from="1602680475025" duration="6585000" />
+      <workItem from="1602688035915" duration="3032000" />
     </task>
     <servers />
   </component>
@@ -152,10 +147,10 @@
       <screen x="52" y="27" width="1314" height="741" />
     </state>
     <state x="373" y="174" key="run.anything.popup/52.27.1314.741@52.27.1314.741" timestamp="1602249007431" />
-    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602687693740">
+    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602689635661">
       <screen x="52" y="27" width="1314" height="741" />
     </state>
-    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup/52.27.1314.741@52.27.1314.741" timestamp="1602687693740" />
+    <state x="372" y="89" width="672" height="678" key="search.everywhere.popup/52.27.1314.741@52.27.1314.741" timestamp="1602689635661" />
     <state x="522" y="115" width="946" height="964" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1602087186092" />
     <state x="434" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602682386477">
       <screen x="52" y="27" width="1314" height="741" />
