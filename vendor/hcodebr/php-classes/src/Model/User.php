@@ -243,16 +243,16 @@ class User extends Model {
 
                 $code = base64_encode($code);
 
-                $link = "http://hcodeecommerce/admin/forgot/reset?code=$code";
+                
+                if ($inadmin === true) {
+                    
+                    $link = "http://hcodeecommerce/admin/forgot/reset?code=$code";
 
-//                if ($inadmin === true) {
-//
-//
-//                } else {
-//
-//                    $link = "http://www.hcodecommerce.com.br/forgot/reset?code=$code";
-//
-//                }
+               } else {
+
+                   $link = "http://hcodeecommerce/forgot/reset?code=$code";
+
+               }
 
                 $mailer = new Mailer($data['desemail'], $data['desperson'], "Redefinir senha da Hcode Store", "forgot", array(
                     "name"=>$data['desperson'],
