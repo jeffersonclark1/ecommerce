@@ -1,11 +1,11 @@
 <?php
 
-use Hcode\Model\Categories;
-use Hcode\Page;
+use \Hcode\Model\Categories;
+use \Hcode\Page;
 use \Hcode\Model\Product;
 use \Hcode\Model\Cart;
 use \Hcode\Model\Address;
-use Hcode\Model\User;
+use \Hcode\Model\User;
 
 $app->get('/', function() {
 
@@ -160,7 +160,7 @@ $app->get("/checkout", function(){
 	$address = new Address();
 	$cart = Cart::getFromSession();
 
-	if (isset($_GET['zipcode'])) {
+	if (!isset($_GET['zipcode'])) {
 
 		$_GET['zipcode'] = $cart->getdeszipcode();
 
@@ -176,9 +176,10 @@ $app->get("/checkout", function(){
 
 		$cart->getCalculateTotal();
 
-	}
-
+    }
+    
 	if (!$address->getdesaddress()) $address->setdesaddress('');
+	if (!$address->getdesnumber()) $address->setdesnumber('');
 	if (!$address->getdescomplement()) $address->setdescomplement('');
 	if (!$address->getdesdistrict()) $address->setdesdistrict('');
 	if (!$address->getdescity()) $address->setdescity('');
@@ -196,6 +197,7 @@ $app->get("/checkout", function(){
 	]);
 
 });
+
 
 $app->post("/checkout", function(){
 
@@ -241,7 +243,7 @@ $app->post("/checkout", function(){
 
 	$address = new Address();
 
-	$_POST['deszipcode'] = $_POST['zipcode'];
+    $_POST['deszipcode'] = $_POST['zipcode'];
 	$_POST['idperson'] = $user->getidperson();
 
     $address->setData($_POST);

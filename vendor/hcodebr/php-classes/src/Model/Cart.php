@@ -202,6 +202,7 @@ class Cart extends Model {
 		if ($totals['nrqtd'] > 0) {
 
 			if ($totals['vlheight'] < 2) $totals['vlheight'] = 2;
+
 			if ($totals['vllength'] < 16) $totals['vllength'] = 16;
 
 			$qs = http_build_query([
