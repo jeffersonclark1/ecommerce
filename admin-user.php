@@ -4,17 +4,46 @@
 use Hcode\Model\User;
 use Hcode\PageAdmin;
 
-$app->get('/admin/users', function(){
+$app->get("/admin/users", function() {
 
-    User::verifyLogin();
+	User::verifyLogin();
 
-    $users = User::listAll();
+	$search = (isset($_GET['search'])) ? $_GET['search'] : "";
+	$page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
 
-    $page = new PageAdmin();
+	if ($search != '') {
 
-    $page->setTpl('users', array(
-        "users"=>$users
-    ));
+		$pagination = User::getPageSearch($search, $page);
+
+	} else {
+
+		$pagination = User::getPage($page);
+
+	}
+
+	$pages = [];
+
+	for ($x = 0; $x < $pagination['pages']; $x++)
+	{
+
+		array_push($pages, [
+			'href'=>'/admin/users?'.http_build_query([
+				'page'=>$x+1,
+				'search'=>$search
+			]),
+			'text'=>$x+1
+		]);
+
+	}
+
+	$page = new PageAdmin();
+
+	$page->setTpl("users", array(
+		"users"=>$pagination['data'],
+		"search"=>$search,
+		"pages"=>$pages
+	));
+
 });
 
 $app->get('/admin/users/create', function(){
